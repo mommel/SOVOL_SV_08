@@ -45,4 +45,5 @@ To do so add a # at the beginng of the line with Option "Rotate" "UD" #.......
 And change the line Option "CalibrationMatrix" "-1 0 1 0 -1 1 0 0 1"
 to Option "CalibrationMatrix" "1 0 0 0 1 0 0 0 1"
 in the file named /etc/X11/xorg.conf.d/01-dbbian-defaults.conf
+![BTT TFT5](Mods/bttTft5v12.png "BTT TFT5 v1.2 Settings fix")
 Do a reboot after changing that line.
