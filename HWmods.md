@@ -37,3 +37,12 @@ If you test your cam ob a windows system you won't have luck, you will get that 
 ![Creality Cam](Mods/crealitycam.png "Creality AI Cam")
 Works as expected, just add a cam2 same like the first, change the port to 8081 same for the other port, set res up to 1920x1080, the device should be video2, as 0 and 1 already come with the buildin one and save restart
 In your WebUI add a second cam set it to the sameurls just add a 2 before the ? and you should see a second cam.
+
+## BTT HDMI 5 v1.2
+
+As the original HDMI Screen is upide down, we need to change those settings to default.
+To do so add a # at the beginng of the line with Option "Rotate" "UD" #.......
+And change the line Option "CalibrationMatrix" "-1 0 1 0 -1 1 0 0 1"
+to Option "CalibrationMatrix" "1 0 0 0 1 0 0 0 1"
+in the file named /etc/X11/xorg.conf.d/01-dbbian-defaults.conf
+Do a reboot after changing that line.
